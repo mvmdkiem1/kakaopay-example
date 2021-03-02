@@ -34,8 +34,9 @@
 	    - X-ROOM-ID : 대화방 id 
 	    - money : 뿌릴 금액
 	    - count : 뿌릴 인원
-	
-	
+
+
+​	
 	응답값 :
 		{
 		    "tokken": token_value, 
@@ -80,7 +81,7 @@
 		 - X-USER-ID : 사용자 id
 		 - X-ROOM-ID : 대화방 id 
 		 - tokken : 요청 tokken
-	
+
 
 	응답값 :
 		{
@@ -125,8 +126,8 @@
  - topic : kakaopay
  - consumer-group : kakaopay-consumer-group
 
-ex) apache-kafka 관련 정보 : https://kafka.apache.org/downloads (kafka version : 2.6.1)
-ex) spring-kafka 관련 정보 : https://docs.spring.io/spring-kafka/reference/html/#update-deps
+ - ex) apache-kafka 관련 정보 : https://kafka.apache.org/downloads (kafka version : 2.6.1)
+ - ex) spring-kafka 관련 정보 : https://docs.spring.io/spring-kafka/reference/html/#update-deps
 
 
 
