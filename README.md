@@ -35,8 +35,6 @@
 	    - money : 뿌릴 금액
 	    - count : 뿌릴 인원
 
-
-​	
 	응답값 :
 		{
 		    "tokken": token_value, 
@@ -60,6 +58,7 @@
 		 - X-USER-ID : 사용자 id
 		 - X-ROOM-ID : 대화방 id 
 		 - tokken : 요청 tokken
+		 
 	응답값 : 
 		{
 		    "resultCode": "200",
@@ -81,7 +80,6 @@
 		 - X-USER-ID : 사용자 id
 		 - X-ROOM-ID : 대화방 id 
 		 - tokken : 요청 tokken
-
 
 	응답값 :
 		{
