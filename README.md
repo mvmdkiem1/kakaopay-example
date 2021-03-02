@@ -34,9 +34,7 @@
 	    - X-ROOM-ID : 대화방 id 
 	    - money : 뿌릴 금액
 	    - count : 뿌릴 인원
-
-
-​	
+	
 	응답값 :
 		{
 		    "tokken": token_value, 
@@ -46,6 +44,7 @@
 		 - tokken : 신규 발급된 tokken (3자리 수 글자)
 		 - resultCode : 200 성공, 500 실패 
 		 - resultMsg : response 응답 메세지 
+
 ### 3.2 돈 받기 API
 
 	요청 URL : /v1/api/divide
@@ -60,6 +59,7 @@
 		 - X-USER-ID : 사용자 id
 		 - X-ROOM-ID : 대화방 id 
 		 - tokken : 요청 tokken
+	
 	응답값 : 
 		{
 		    "resultCode": "200",
@@ -81,8 +81,7 @@
 		 - X-USER-ID : 사용자 id
 		 - X-ROOM-ID : 대화방 id 
 		 - tokken : 요청 tokken
-
-
+	
 	응답값 :
 		{
 		    "giveMoney": "20000",
