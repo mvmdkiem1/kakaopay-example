@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kakaopay.dao.DivideMoneyDao">
+	<insert id="addDivideMoney" parameterType="com.kakaopay.vo.DivideMoney">
+        INSERT INTO dividemoney (
+        	order_no, 
+        	room_id,
+        	user_id,
+        	count,
+        	money,
+        	reg_date,
+        	group_id
+        ) VALUES (
+        	#{orderNo}, 
+        	#{roomId}, 
+        	#{userId}, 
+        	#{count},
+        	#{money},
+        	#{regDate},
+        	#{groupId}
+        ) 
+	</insert>
+</mapper>
