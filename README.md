@@ -134,46 +134,43 @@ ex) spring-kafka 관련 정보 : https://docs.spring.io/spring-kafka/reference/h
 
 ### 5.1 대화방 정보 테이블
 
-CREATE TABLE `chatroom` (
-	  `_id` int NOT NULL AUTO_INCREMENT,
-	  `chat_room_id` varchar(255) NOT NULL,
-	  `chat_room_title` varchar(255) NOT NULL,
-	  `chat_room_status` varchar(4) NOT NULL,
-	  PRIMARY KEY (`_id`)
-	) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-
+		CREATE TABLE `chatroom` (
+		  `_id` int NOT NULL AUTO_INCREMENT,
+		  `chat_room_id` varchar(255) NOT NULL,
+		  `chat_room_title` varchar(255) NOT NULL,
+		  `chat_room_status` varchar(4) NOT NULL,
+		  PRIMARY KEY (`_id`)
+		) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 
 ### 5.2 대화방 사용자 정보 테이블
 
-CREATE TABLE `chatroommember` (
-	  `_id` int NOT NULL AUTO_INCREMENT,
-	  `user_id` varchar(255) DEFAULT NULL,
-	  `user_name` varchar(10) DEFAULT NULL,
-	  `user_money` decimal(15,0) DEFAULT NULL,
-	  `chat_room_id` varchar(255) DEFAULT NULL,
-	  PRIMARY KEY (`_id`)
-	) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
-
+		CREATE TABLE `chatroommember` (
+		  `_id` int NOT NULL AUTO_INCREMENT,
+		  `user_id` varchar(255) DEFAULT NULL,
+		  `user_name` varchar(10) DEFAULT NULL,
+		  `user_money` decimal(15,0) DEFAULT NULL,
+		  `chat_room_id` varchar(255) DEFAULT NULL,
+		  PRIMARY KEY (`_id`)
+		) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 
 ### 5.3 돈 뿌리기 정보 테이블
 
-CREATE TABLE `dividemoney` (
-	  `_id` int NOT NULL AUTO_INCREMENT,
-	  `order_no` int DEFAULT NULL,
-	  `count` int DEFAULT NULL,
-	  `money` decimal(15,0) DEFAULT NULL,
-	  `room_id` varchar(255) DEFAULT NULL,
-	  `user_id` varchar(255) DEFAULT NULL,
-	  `user_name` varchar(45) DEFAULT NULL,
-	  `user_money` decimal(15,0) DEFAULT NULL,
-	  `reg_date` datetime DEFAULT NULL,
-	  `update_date` datetime DEFAULT NULL,
-	  `group_id` varchar(255) DEFAULT NULL,
-	  PRIMARY KEY (`_id`)
-	) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
-
+		CREATE TABLE `dividemoney` (
+		  `_id` int NOT NULL AUTO_INCREMENT,
+		  `order_no` int DEFAULT NULL,
+		  `count` int DEFAULT NULL,
+		  `money` decimal(15,0) DEFAULT NULL,
+		  `room_id` varchar(255) DEFAULT NULL,
+		  `user_id` varchar(255) DEFAULT NULL,
+		  `user_name` varchar(45) DEFAULT NULL,
+		  `user_money` decimal(15,0) DEFAULT NULL,
+		  `reg_date` datetime DEFAULT NULL,
+		  `update_date` datetime DEFAULT NULL,
+		  `group_id` varchar(255) DEFAULT NULL,
+		  PRIMARY KEY (`_id`)
+		) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
 
 
 ## 6. 평가항목
