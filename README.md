@@ -34,18 +34,17 @@
 	    - X-ROOM-ID : 대화방 id 
 	    - money : 뿌릴 금액
 	    - count : 뿌릴 인원
-
-
-​	
+	
 	응답값 :
 		{
-		    "tokken": token_value, 
-		    "resultCode": "200",
-		    "resultMsg": "정상 처리 되었습니다."
+	    	"tokken": token_value, 
+	    	"resultCode": "200",
+	    	"resultMsg": "정상 처리 되었습니다."
 		}
-		 - tokken : 신규 발급된 tokken (3자리 수 글자)
-		 - resultCode : 200 성공, 500 실패 
-		 - resultMsg : response 응답 메세지 
+		- tokken : 신규 발급된 tokken (3자리 수 글자)
+		- resultCode : 200 성공, 500 실패 
+		- resultMsg : response 응답 메세지 
+
 ### 3.2 돈 받기 API
 
 	요청 URL : /v1/api/divide
@@ -63,7 +62,8 @@
 	응답값 : 
 		{
 		    "resultCode": "200",
-		    "resultMsg": "6522원을 줍줍 하였습니다. 현재 당신의 카카오 페이는 총 35057원 입니다."
+		    "resultMsg": "6522원을 줍줍 하였습니다. 
+		    현재 당신의 카카오 페이는 총 35057원 입니다."
 		}
 		 - resultCode : 200 성공, 500 실패 
 		 - resultMsg : response 응답 메세지 
