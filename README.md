@@ -1,5 +1,5 @@
 ## 1. 돈 뿌리기 API Server 프로젝트 구성 
-
+ - 프로젝트명 : DivideMoney
  - java 1.8
  - spring boot
  - jpa
@@ -8,7 +8,7 @@
 
 
 ## 2. 돈 뿌리기 Kafka Consumer 프로젝트 구성 
-
+ - 프로젝트명 : DivideMoneyConsumer
  - java 1.8
  - spring boot, srping boot kafka
  - mybatis
